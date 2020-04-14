@@ -21,3 +21,5 @@ echo "-----> Downloading Matterbridge: $MATTERBRIDGE_URL"
 cd $BUILD_DIR
 curl --silent --location "$MATTERBRIDGE_URL" --output matterbridge
 chmod +x matterbridge
+
+../lib/envsubst < ../config/matterbridge.toml > config/matterbridge.toml
