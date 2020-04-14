@@ -22,4 +22,4 @@ cd $BUILD_DIR
 curl --silent --location "$MATTERBRIDGE_URL" --output matterbridge
 chmod +x matterbridge
 
-../lib/envsubst < ../config/config-heroku-template.toml > ../config/matterbridge.toml
+lib/envsubst < config/config-heroku-template.toml > config/matterbridge.toml
