@@ -42,7 +42,7 @@ name="discord.slack.smartgame"
 enable=true
 inout = [
     { account="discord.ario", channel="smartgame-slack" },
-    { account="slack.ario", channel="smartgame" },
+    { account="slack.ario", channel="smart-game" },
 ]
 
 [[gateway]]
