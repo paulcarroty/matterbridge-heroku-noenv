@@ -54,6 +54,38 @@ inout = [
 ]
 
 [[gateway]]
+name="discord.slack.io"
+enable=true
+inout = [
+    { account="discord.ario", channel="io" },
+    { account="slack.ario", channel="team-io" },
+]
+
+[[gateway]]
+name="discord.slack.io2"
+enable=true
+inout = [
+    { account="discord.ario", channel="io2" },
+    { account="slack.ario", channel="team-io2" },
+]
+
+[[gateway]]
+name="discord.slack.mars"
+enable=true
+inout = [
+    { account="discord.ario", channel="mars" },
+    { account="slack.ario", channel="team-mars" },
+]
+
+[[gateway]]
+name="discord.slack.holmes"
+enable=true
+inout = [
+    { account="discord.ario", channel="holmes" },
+    { account="slack.ario", channel="team-holmes" },
+]
+
+[[gateway]]
 name = "discord.slack.general"
 enable=true
 [[gateway.in]]
