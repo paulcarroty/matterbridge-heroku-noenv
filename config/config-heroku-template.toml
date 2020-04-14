@@ -25,7 +25,7 @@ inout = [
 name="discord.slack.links"
 enable=true
 inout = [
-    { account="discord.ario", channel="links-random" },
+    { account="discord.ario", channel="links-slack" },
     { account="slack.ario", channel="links" },
 ]
 
@@ -64,11 +64,11 @@ account = "discord.ario"
 channel="general-slack"
 
 [[gateway]]
-name = "discord.slack.support"
+name = "discord.slack.problems"
 enable=true
 [[gateway.in]]
-account ="slack.support"
-channel = "general"
+account ="slack.ario"
+channel = "ario-problems"
 [[gateway.out]]
 account = "discord.ario"
-channel="ario-problems-support"
+channel="ario-problems-slack"
