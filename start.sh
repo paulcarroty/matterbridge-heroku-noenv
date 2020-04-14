@@ -10,7 +10,7 @@ function _term {
 
 trap _term SIGTERM
 
-./bin/compile
+./bin/compile &
 ./matterbridge -conf=config/config-heroku.toml &
 
 PID=$!
