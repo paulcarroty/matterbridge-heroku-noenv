@@ -1,1 +1,1 @@
-web: matterbridge -conf=config/config-heroku.toml
+web: matterbridge -conf=config/matterbridge.toml
