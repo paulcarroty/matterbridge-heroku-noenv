@@ -17,7 +17,7 @@ Token="${SLACK_SUPPORT_TOKEN}"
 name="discord.slack.random"
 enable=true
 inout = [
-    { account="discord.ario", channel="random-slack" },
+    { account="discord.ario", channel="random" },
     { account="slack.ario", channel="random" },
 ]
 
@@ -25,7 +25,7 @@ inout = [
 name="discord.slack.links"
 enable=true
 inout = [
-    { account="discord.ario", channel="links-slack" },
+    { account="discord.ario", channel="links" },
     { account="slack.ario", channel="links" },
 ]
 
@@ -33,7 +33,7 @@ inout = [
 name="discord.slack.news"
 enable=true
 inout = [
-    { account="discord.ario", channel="news-slack" },
+    { account="discord.ario", channel="news" },
     { account="slack.ario", channel="news" },
 ]
 
@@ -41,7 +41,7 @@ inout = [
 name="discord.slack.smartgame"
 enable=true
 inout = [
-    { account="discord.ario", channel="smartgame-slack" },
+    { account="discord.ario", channel="smart-game" },
     { account="slack.ario", channel="smart-game" },
 ]
 
@@ -49,7 +49,7 @@ inout = [
 name="discord.slack.teamleads"
 enable=true
 inout = [
-    { account="discord.ario", channel="teamleads-slack" },
+    { account="discord.ario", channel="team-leads" },
     { account="slack.ario", channel="team-leads" },
 ]
 
@@ -86,21 +86,31 @@ inout = [
 ]
 
 [[gateway]]
-name = "discord.slack.general"
+name="discord.slack.general"
 enable=true
 [[gateway.in]]
-account ="slack.ario"
-channel = "general"
+account="slack.ario"
+channel="general"
 [[gateway.out]]
-account = "discord.ario"
+account="discord.ario"
 channel="general-slack"
 
 [[gateway]]
-name = "discord.slack.problems"
+name="discord.slack.problems"
 enable=true
 [[gateway.in]]
-account ="slack.ario"
-channel = "ario-problems"
+account="slack.ario"
+channel="ario-problems"
 [[gateway.out]]
-account = "discord.ario"
-channel="ario-problems-slack"
+account="discord.ario"
+channel="ario-problems"
+
+[[gateway]]
+name="discord.slack.daily"
+enable=true
+[[gateway.in]]
+account="slack.ario"
+channel="menya-zastavili-sozdat-etot-kanal"
+[[gateway.out]]
+account="discord.ario"
+channel="menya-zastavili-sozdat-etot-kanal"
