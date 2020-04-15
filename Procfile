@@ -1,2 +1,2 @@
-web: ./matterbridge -conf=config/matterbridge.toml
+web: ./matterbridge -conf=config/matterbridge.toml -debug -gops
 worker: ./start.sh
