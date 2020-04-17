@@ -16,101 +16,119 @@ Token="${SLACK_SUPPORT_TOKEN}"
 [[gateway]]
 name="discord.slack.random"
 enable=true
-inout = [
-    { account="discord.ario", channel="random" },
-    { account="slack.ario", channel="random" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="random"
+[[gateway.out]]
+account="slack.ario"
+channel="random"
 
 [[gateway]]
 name="discord.slack.links"
 enable=true
-inout = [
-    { account="discord.ario", channel="links" },
-    { account="slack.ario", channel="links" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="links"
+[[gateway.out]]
+account="slack.ario"
+channel="links"
 
 [[gateway]]
 name="discord.slack.news"
 enable=true
-inout = [
-    { account="discord.ario", channel="news" },
-    { account="slack.ario", channel="news" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="news"
+[[gateway.out]]
+account="slack.ario"
+channel="news"
 
 [[gateway]]
 name="discord.slack.smartgame"
 enable=true
-inout = [
-    { account="discord.ario", channel="smart-game" },
-    { account="slack.ario", channel="smart-game" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="smart-game"
+[[gateway.out]]
+account="slack.ario"
+channel="smart-game"
 
 [[gateway]]
 name="discord.slack.teamleads"
 enable=true
-inout = [
-    { account="discord.ario", channel="team-leads" },
-    { account="slack.ario", channel="team-leads" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="team-leads"
+[[gateway.out]]
+account="slack.ario"
+channel="team-leads"
 
 [[gateway]]
 name="discord.slack.io"
 enable=true
-inout = [
-    { account="discord.ario", channel="io" },
-    { account="slack.ario", channel="team-io" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="io"
+[[gateway.out]]
+account="slack.ario"
+channel="team-io"
 
 [[gateway]]
 name="discord.slack.io2"
 enable=true
-inout = [
-    { account="discord.ario", channel="io2" },
-    { account="slack.ario", channel="team-io2" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="io2"
+[[gateway.out]]
+account="slack.ario"
+channel="team-io2"
 
 [[gateway]]
 name="discord.slack.mars"
 enable=true
-inout = [
-    { account="discord.ario", channel="mars" },
-    { account="slack.ario", channel="team-mars" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="mars"
+[[gateway.out]]
+account="slack.ario"
+channel="team-mars"
 
 [[gateway]]
 name="discord.slack.holmes"
 enable=true
-inout = [
-    { account="discord.ario", channel="holmes" },
-    { account="slack.ario", channel="team-holmes" },
-]
+[[gateway.in]]
+account="discord.ario"
+channel="holmes"
+[[gateway.out]]
+account="slack.ario"
+channel="team-holmes"
 
 [[gateway]]
 name="discord.slack.general"
 enable=true
 [[gateway.in]]
-account="slack.ario"
+account="discord.ario"
 channel="general"
 [[gateway.out]]
-account="discord.ario"
-channel="general-slack"
+account="slack.ario"
+channel="general"
 
 [[gateway]]
 name="discord.slack.problems"
 enable=true
 [[gateway.in]]
-account="slack.ario"
+account="discord.ario"
 channel="ario-problems"
 [[gateway.out]]
-account="discord.ario"
+account="slack.ario"
 channel="ario-problems"
 
 [[gateway]]
 name="discord.slack.daily"
 enable=true
 [[gateway.in]]
-account="slack.ario"
+account="discord.ario"
 channel="menya-zastavili-sozdat-etot-kanal"
 [[gateway.out]]
-account="discord.ario"
+account="slack.ario"
 channel="menya-zastavili-sozdat-etot-kanal"
