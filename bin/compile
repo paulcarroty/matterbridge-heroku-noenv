@@ -23,5 +23,3 @@ curl --silent --location "$MATTERBRIDGE_URL" --output matterbridge
 
 chmod +x matterbridge
 chmod a+x start.sh
-
-echo $MCONFIG | base64 -d >> config/matterbridge.toml
