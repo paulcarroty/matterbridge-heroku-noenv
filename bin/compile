@@ -18,7 +18,7 @@ echo LATEST_VERSION $LATEST_VERSION
 CLEAR_VERSION=`echo $LATEST_VERSION | sed 's/v//'`
 MATTERBRIDGE_VERSION="$LATEST_VERSION"
 echo MATTERBRIDGE_VERSION $MATTERBRIDGE_VERSION
-MATTERBRIDGE_URL="https://github.com/42wim/matterbridge/releases/download/$MATTERBRIDGE_VERSION/matterbridge-$CLEAR_VERSION-linux-amd64"
+MATTERBRIDGE_URL="https://github.com/42wim/matterbridge/releases/download/$MATTERBRIDGE_VERSION/matterbridge-$CLEAR_VERSION-linux-64bit"
 echo MATTERBRIDGE_URL $MATTERBRIDGE_URL
 
 echo "-----> Downloading Matterbridge: $MATTERBRIDGE_URL"
