@@ -15,7 +15,7 @@ export_env_dir "$ENV_DIR"
 
 LATEST_VERSION=$(get_latest_release "42wim/matterbridge")
 echo LATEST_VERSION $LATEST_VERSION
-CLEAR_VERSION=echo $LATEST_VERSION | sed 's/v//'
+CLEAR_VERSION=`echo $LATEST_VERSION | sed 's/v//'`
 MATTERBRIDGE_VERSION="$LATEST_VERSION"
 echo MATTERBRIDGE_VERSION $MATTERBRIDGE_VERSION
 MATTERBRIDGE_URL="https://github.com/42wim/matterbridge/releases/download/$MATTERBRIDGE_VERSION/matterbridge-$CLEAR_VERSION-linux-amd64"
