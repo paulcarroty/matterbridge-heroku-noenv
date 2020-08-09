@@ -8,5 +8,11 @@
     {
       "url": "https://github.com/paulcarroty/matterbridge-heroku-noenv#master"
     }
-  ]
+  ],
+  "env": {
+    "MCONFIG": {
+       "description": "cat matterbridge.toml | base64 -w 0",
+       "value": ""
+    }
+  }
 }
