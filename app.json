@@ -8,11 +8,5 @@
     {
       "url": "https://github.com/paulcarroty/matterbridge-heroku-noenv#master"
     }
-  ],
-  "env": {
-    "MATTERBRIDGE_VERSION": {
-       "description": "Version of matterbridge to download and deploy",
-       "value": ""
-    }
-  }
+  ]
 }
