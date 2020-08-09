@@ -1,2 +1,2 @@
-web: echo $MCONFIG | base64 -d >> /app/config/matterbridge.toml && ./matterbridge -conf=/app/config/matterbridge.toml -debug -gops
+web: /app/matterbridge -conf=/app/config/matterbridge.toml & python -m SimpleHTTPServer $PORT
 worker: ./start.sh
